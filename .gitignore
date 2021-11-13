@@ -4,5 +4,5 @@
 *.synctex.gz
 *.log
 *.fdb_latexmk
-*.rls
+*.fls
 *.xdv
