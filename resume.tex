@@ -1,4 +1,4 @@
-\documentclass[letterpaper]{deedy-resume-openfont} % Use US Letter paper, change to a4paper for A4 
+\documentclass[a4paper]{deedy-resume-openfont} % Use US Letter paper, change to a4paper for A4
 
 \begin{document}
 
@@ -8,53 +8,118 @@
 
 \lastupdated % Print the Last Updated text at the top right
 
-\namesection{Linda (Hanzhang)}{Zheng}{ % Your name
-\href{mailto:lindazheng1993@gmail.com}{lindazheng1993@gmail.com | 469-305-9242} % Your contacv information
+\namesection{Linda}{Zheng}{ % Your name
+\href{mailto:lindazheng1993@gmail.com}{lindazheng1993@gmail.com | 469-305-9242 | github.com/yaylinda} % Your contacv information
 }
 
-%----------------------------------------------------------------------------------------
-% LEFT COLUMN
-%----------------------------------------------------------------------------------------
+\section{Experience}
+\sectionheadersep
 
-\begin{minipage}[t]{0.29\textwidth} % The left column takes up 33% of the text width of the page
+\runsubsection{Encipher}
+\descript{| Principal Software Engineer}
+\location{Oct 2022 - Present | Houston, TX (Remote)}
+
+\begin{tightemize}
+\item Designed the system architecture, and led small but mighty engineering team in the implementation of Encipher's flagship product, InfinityVAULT, a trustless role-based secure data storage and permissioning system.
+\item Designed the gRPC interface and data-modeling between the Python backend server, Cassandra database, and multiple frontend clients: React App, Microsoft Office Plug-In, Desktop Client
+\item Built the backend server and React App, while leading other developers on the development of the other clients. 
+\item Setup the architecture for an asynchronous task workflow orchestrator to improve the performance and scalability of the product.
+\item Coordinated with executive leaders and stakeholders on product requirements and deliverables.
+\item Patent-pending on the trustless and role-based secure data storage methodologies.
+\end{tightemize}
+
+\sectionsep % Some whitespace after the section
+
+\runsubsection{Discord}
+\descript{| Senior Software Engineer}
+\location{Apr 2022 - Oct 2022 | San Francisco, CA (Remote)}
+
+\begin{tightemize}
+\item Developed various marketing surfaces and in-app promotions for premium subscriptions (Nitro) on Desktop and Mobile clients.
+\item Developed a smoother and more streamlined payment experience for the Mobile client, resulting in an increased number of users completing the payment flow, and increased MRR.
+\item Developed and launched a new premium subscription tier (Nitro Basic) for Desktop and Mobile. Responsible for integrating with the Apple App Store and Google Play Store. 
+\item Migrated and maintained a gRPC microservice from Python to Rust for gift and promotion codes of Discord Nitro subscriptions. Highly resilient and available, with over 10M requests per day and <10ms latency.
+\end{tightemize}
+
+\sectionsep % Some whitespace after the section
+
+\runsubsection{Redfin}
+\descript{| Senior Software Engineer}
+\location{Jan 2020 - Mar 2022 | Frisco, TX}
+
+\begin{tightemize}
+\item Senior Engineer in the Home Services Organization, responsible for designing and building out a platform to manage home renovation projects across Redfin properties. 
+\item Became the Lead Engineer for the "Vendor Management" team after a team split. Focused on developing a platform for vendor recommendations, ratings, and reviews, based on location and trade.
+\item Led the design and development of several large projects, and mentored junior and new teammates, with weekly 1:1's, pair programming and debugging sessions, answering questions on Slack in the team engineering channels.
+\item Backend technologies include: Java, GraphQL, Apollo (for GraphQL schema federation), Bazel (and Gradle), Guice, SpringBoot, PostgreSQL (hosted on AWS RDS), Flyway (for DB migrations), Netflix's Conductor (for task orchestration), Kafka and Samza for stream/event processing. Kubernetes and Spinnaker for deployment. 
+\item Frontend technologies include: React for desktop web application. React Native for mobile application (iOS, Android)
+\item Designed the integration with 3rd party systems and API's such as Coupa, to correctly sync and manage payment within Builder Tools. Including developing cron jobs to sync data between platforms.
+\item Worked with product and business managers to understand the needs of the users, collaborated with UX designers, and planned and executed the steps for development.
+\item One of the founding members of both the React Native and Typescript Working Groups, to improve the developer experience, and increase adoption across the company.
+\item Led the initiative to migrate the team's code from a monorepo to poly-repos, with isolated deployments. Set up the new repositories, CI/CD pipelines, and documented best practices for the team.
+\end{tightemize}
+
+\sectionsep % Some whitespace after the section
+
+\runsubsection{Capital One}
+\descript{| Senior Software Engineer}
+
+\location{July 2019 - Jan 2020 | Plano, TX}
+
+\begin{tightemize}
+\item Designed and and developed Metadata Management Service. Including discovering metadata across entire corporation, automated data pipeline to bring data into internal database to be used for the marketing platform. Developed frontend application with role-management to facilitate the data onboarding process. (Java, SpringBoot, Vue, PostgreSQL, MemSQL, AWS, ECS)
+\item Patent pending on dataset collation process to use data from multiple sources, with multiple cadences as consolidated dynamic view. (Java, SpringBoot, NodeJS, SQL)
+\item Patent pending on API introspection and invocation process. (Java, SpringBoot, OpenAPI Spec)
+\item Continued maintenance and development on six microservices for marketing platform.
+\item Demonstrated leadership by mentoring new team member on Vue development, and leading sub-team with detailed requirements and dates.
+\end{tightemize}
+
+\sectionsep % Some whitespace after the section
+
+\runsubsection{Capital One}
+\descript{| Software Engineer}
+\location{July 2017 - July 2019 | Plano, TX}
+
+\begin{tightemize}
+\item Designed and developed an enterprise-wide platform for automated, real-time, always-on, intelligent marketing platform. Primary developer and owner of six microservices, and one of three frontend developers. (Java, SpringBoot, NodeJS, MemSQL, PostgreSQL, Javascript/Typescript, HTML/CSS, WebComponents, AWS)
+\item Developed an Ad Server integrated with Google AdSense to serve dynamically rendered, individually customized vehicle ads based on customer information. Intelligently parses vehicle make, model, and body type from source website. Patent pending. (Java, SpringBoot, NodeJS, ECS, Redis, HTML/CSS, Mustache)
+\item Instrumented metrics for over a dozen microservices, using Prometheus. Authored rules for PagerDuty alerts based on metrics, with Slack integration. (Prometheus, PromQL, Slack) 
+\item Implemented API and UI for Call Center agents to capture notes from customer communications. (Java, Angular, AWS, PostgreSQL)
+\item Designed and implemented Automated Handwriting System using RNN Machine Learning Algorithms, with UI, server, and polling client to write greeting cards to customers. (Python, Tensorflow, Angular, AxiDraw V3)
+\item Developed enterprise-wide API for Cloud file storage abstraction, and an automated data migration system to extract files from the on-premise Data Center to the Cloud with unique IDs for fast retrieval. (Java, ECS, S3, SQS, CFT, SQL)
+\end{tightemize}
+
+\sectionsep % Some whitespace after the section
+
+\runsubsection{Capital One}
+\descript{| Associate Software Engineer}
+\location{July 2016 - July 2017 | Plano, TX}
+
+\begin{tightemize}
+\item Developed an Angular Widget for all Financial Services applications to capture customer feedback. (Java, SpringBoot, Angular, AWS, PostgreSQL, Splunk)
+\item Built ad-hoc data analysis platform using open-source Apache Zeppelin. Implemented features: connection to Redshift Clusters, schema browser, SQL parser/linter/visualizer. (Java, Angular, AWS, Redshift, ElasticSearch, Spark, R, Python)
+\end{tightemize}
+
+\sectionsep % Some whitespace after the section
 
 %------------------------------------------------
 % Education
 %------------------------------------------------
+\sectionsep
+\sectionsep
+\section{Education}
+\sectionheadersep
 
-\section{Education} 
+\runsubsection{Rice University}
+\descript{| Computer Science, Statistics}
+\location{Aug 2012 - May 2016 | GPA: 3.7}
 
-\subsection{Rice University}
-
-\descript{Bachelor of Science in Computer Science, Statistics}
-\location{Aug 2012 - May 2016 \\ GPA: 3.7}
-
-%------------------------------------------------
-% Coursework
-%------------------------------------------------
-
-\section{Coursework}
-
-\subsection{Computer Science}
-\textbullet{} Artificial Intelligence\\
-\textbullet{} Game Creation \& Design\\
-\textbullet{} Operating Systems\\
-\textbullet{} Concurrent Programming\\
-\textbullet{} Database Systems and Design\\
-\textbullet{} Object Oriented Programming\\
-\textbullet{} Compilers\\
-\textbullet{} Data Structures\\
-\textbullet{} Advanced Algorithms\\
+\begin{tightemize}
+\item Computer Science Courses: Artificial Intelligence, Game Creation \& Design, Operating Systems, Concurrent Programming, Database Systems and Design, Object Oriented Programming, Compilers, Data Structures, Advanced Algorithms
+\item Statistics Courses: Data Mining, Statistical Learning, Financial Time Series, Regression Analysis, Bioinformatics
+\end{tightemize}
 
 \sectionsep % Some whitespace after the section
-
-\subsection{Statistics}
-\textbullet{} Data Mining\\
-\textbullet{} Statistical Learning\\
-\textbullet{} Financial Time Series\\
-\textbullet{} Regression Analysis\\
-\textbullet{} Bioinformatics\\
-
 \sectionsep % Some whitespace after the section
 
 %------------------------------------------------
@@ -62,196 +127,34 @@
 %------------------------------------------------
 
 \section{Skills}
+\sectionheadersep
 
-\subsection{Programming}
-
-\textbullet{} Java\\
-\textbullet{} Python\\
-\textbullet{} JavaScript/Typescript\\
-\textbullet{} HTML/CSS\\
-\textbullet{} SQL\\
-\textbullet{} R\\
-\textbullet{} Matlab\\
-\textbullet{} C\\
-\textbullet{} C++
-
-\sectionsep % Some whitespace after the section
-
-\subsection{Frameworks}
-\textbullet{} Spring/SpringBoot\\
-\textbullet{} Angular\\
-\textbullet{} React\\
-\textbullet{} AWS\\
-\textbullet{} Android\\
-\textbullet{} iOS\\
-
-\sectionsep % Some whitespace after the section
-
-\subsection{Github}
-\textbullet{} https://github.com/yaylinda
-
-%----------------------------------------------------------------------------------------
-
-\end{minipage} % The end of the left column
-\hfill
-%
-%----------------------------------------------------------------------------------------
-% RIGHT COLUMN
-%----------------------------------------------------------------------------------------
-%
-\begin{minipage}[t]{0.7\textwidth} % The right column takes up 66% of the text width of the page
-
-%------------------------------------------------
-% Experience
-%------------------------------------------------
-
-\section{Experience}
-
-\runsubsection{Capital One}
-\descript{| Software Engineer (Team: DataDragons)}
-
-\location{July 2018 - Present | Plano, TX}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-
+\runsubsection{Programming Languages}
+\sectionheadersep
 \begin{tightemize}
-\item Developed a First Party Ad Server that works with Google AdSense to serve dynamically rendered, individually customized vehicle ads based on information from Capital One cookie values. Ad Server also parses data from the source website, such as vehicle make and model, body type, to serve ads with matching vehicles within the user's area. API responds within 50ms per call. (Java, ECS, Redis, HTML/CSS, Mustache)
-\item Maintains Webflux API that retrieves over 250+ customer attributes for  a given Capital One cookie value or Capital One customer ID. API responds in ~5ms per call. This API is central to the whole team's projects. (Java, ECS, Redis, Spring Webflux)
-\item Designed and developing enterprise-wide platform for automated, real-time, always-on, intelligent marketing campaigns. Comprised of 10+ microservices, including database design and UI/UX development. I am the primary developer and owner of four of the 10+ microservices, one of the three databases, and also a frontend developer for one of the components. (Java, MemSQL, PostgreSQL, Javascript, WebComponents, AWS)
-\item Instrumented application metrics for the entire team, over 10 microservices, using the Prometheus framework. Authored rules for PagerDuty alerts based on metrics, with Slack integration. (Prometheus, PromQL, Slack) 
+\item Java
+\item Python
+\item Typescript
+\item JavaScript
+\item HTML/CSS
+\item SQL
+\item R
+\item Rust (new)
 \end{tightemize}
 
-\sectionsep % Some whitespace after the section
+\sectionsep
+\sectionsep
 
-\runsubsection{Capital One}
-\descript{| Software Engineer (Team: Innovaniacs)}
-\location{July 2017 - July 2018 | Plano, TX}
-
+\runsubsection{Frameworks \& Technologies}
+\sectionheadersep
 \begin{tightemize}
-\item Implemented API and UI for Call Center agents to capture notes from customer communications. (Java, Angular, AWS, PostgreSQL)
-\item Designed and implemented Automated Handwriting System using RNN Machine Learning Algorithms, with UI, server, and polling client to write greeting cards to customers. (Python, Tensorflow, Angular, AxiDraw V3)
-\item Developed enterprise-wide API for Cloud file storage abstraction. (Java, AWS, S3, SQL)
-\item Designed and developed an automated data migration system with weekly queries to extract files from the on-premise Data Center and transfer to the Cloud with unique IDs for fast retrieval. (Java, ECS, S3, SQS, CFT, SQL)
+\item AWS
+\item Kubernetes
+\item GraphQL + Apollo
+\item Spring/SpringBoot
+\item React
+\item React Native
+\item Vue
 \end{tightemize}
-
-\sectionsep % Some whitespace after the section
-
-\runsubsection{Capital One}
-\descript{| Associate Software Engineer (Team: Myself and DataDragons)}
-\location{July 2016 - July 2017 | Plano, TX}
-
-\begin{tightemize}
-\item Developed Angular Widget that was easily integrated with all Financial Services applications to capture customer feedback. (Java, Angular, AWS, PostgreSQL, Splunk)
-\item Built ad-hoc data analysis platform using open-source Apache Zeppelin. Implemented features: connection to Redshift Clusters, schema browser, SQL parser/linter/visualizer. (Java, Angular, AWS, Redshift, ElasticSearch, Spark, R, Python)
-\end{tightemize}
-
-\sectionsep % Some whitespace after the section
-
-%------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-
-\end{minipage} % The end of the right column
-
-%----------------------------------------------------------------------------------------
-% SECOND PAGE (EXAMPLE)
-%----------------------------------------------------------------------------------------
-
-\newpage % Start a new page
-
-\begin{minipage}[t]{0.29\textwidth} % The left column takes up 33% of the text width of the page
-
-\section{}
-
-\end{minipage} % The end of the left column
-\hfill
-\begin{minipage}[t]{0.7\textwidth} % The right column takes up 66% of the text width of the page
-
-%------------------------------------------------
-% Experience
-%------------------------------------------------
-
-\section{Internships}
-
-\runsubsection{Shape Security}
-\descript{| KPCB Fellow + Software Engineering Intern}
-\location{May 2015 - Aug 2015 | Mountain View, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-
-One of 60 out of 2500+ applicants chosen to be a Kleiner, Perkins, Caufield and Byers Engineering Fellow of 2015. Interned at Shape Security, one of KPCB's portfolio companies. There, I upgraded Shape Security's open-source project, to support tooling for ECMAScript 6, which was just coming out at the time. Tools include: Abstract Syntax Tree node generator, Parser, Code Generator from AST, AST Validator, Fuzzer, Reducer, (De)Serializer. So I could write Java to generate JavaScript code! At the end of the summer, I presented my experience at the South Bay JavaScript Meetup, hosted by Shape Security. 
-
-\sectionsep % Some whitespace after the section
-
-%------------------------------------------------
-
-\runsubsection{PROS}
-\descript{| Software Engineering Intern}
-
-\location{May 2014 - Aug 2014 | Houston, TX}
-Worked on three distinct projects during my internship:
-Project \#1 - Implemented ElasticSearch, LogStash, Kibana stack for various application logs. (ELK)
-Project \#2 - Built nightly task that summarizes flight booking statistics and sends analytics email, using map-reduce algorithms. (Java, Cassandra)
-Project \#3 - Created APIs for Notification and Notes Services for a Travel Agent System. (Java)
-
-\sectionsep % Some whitespace after the section
-
-%------------------------------------------------
-
-\runsubsection{Jones McClure Publishing}
-\descript{| Software Engineering Intern}
-
-\location{June 2013 - Sep 2013 | Houston, TX}
-Built two dynamic web applications and mobile-compatible versions: Income Tax Calculator, Child Support Calculator. (C\#, Javascript/HTML/CSS). Also built an Administration site to track and display internal business data. (C\#, Javascript/HTML/CSS).
-
-
-\sectionsep % Some whitespace after the section
-
-%------------------------------------------------
-% Other projects
-%------------------------------------------------
-
-\section{Other Projects}
-
-%------------------------------------------------
-
-\runsubsection{Simple War}
-\descript{| Personal Project}
-
-\location{2018-Present | Anywhere}
-REST-ful, turn-based game with online match-making. Front-end built in Angular 4, with Java as the API and game-engine layer, MongoDB for game data storage, and websockets for real-time game-board updates. Players take turns placing cards (troops, walls, special) on the board. Player wins when a certain number of points have been scored. Points are earned from successfully moving troops across the board to the opponent's side, while the opponent places cards to stop advancement. \href{http://3.85.160.165:4200/}{Give it a try (looks better in half-screen)}.
-
-\sectionsep % Some whitespace after the section
-
-%------------------------------------------------
-\runsubsection{Parking Navigator}
-\descript{| Company Hackathon}
-
-\location{Aug 2017 | Plano, TX}
-Project for internal Hackathon hosted by Capital One. Drone flies around campus on a pre-set path, taking aerial shots of parking lot. Sends pictures to server for processing, using edge detection to find empty parking spots. 
-
-\sectionsep % Some whitespace after the section
-
-%------------------------------------------------
-
-\runsubsection{Decoding the Brain from Electrocorticographical Readings}
-\descript{| Undergraduate Senior Thesis in Statistics}
-
-\location{Jan 2016 - May 2016 | Houston, TX}
-Analyzed ECoG data of brain frequencies obtained from 42 nodes placed on the brain of an epileptic patient while the patient watched videos of a person saying "rock" or "rain" with blurry or clear visual and audio. Goal was to be able to classify the type of stimuli based on the brain frequencies data. Used 3D and 4D Higher Order Partial Least Squares Methods for analysis. Found strong effects of priming in the brain (audio section of the brain became activated when visual start even if there is no audio yet, and vice-versa).
-
-\sectionsep % Some whitespace after the section
-
-%------------------------------------------------
-
-\runsubsection{Computer Game Creation}
-\descript{| Senior Project}
-
-\location{Jan 2015 - May 2015 | Houston, TX}
-Multi-player, cross-platform game, combining the game-play mechanics of Doodle Jump, and competitive nature of Mario Kart. The game is called \href{http://poporopo.nimbusmog.com}{"Poporopo"} (looks better in half-screen).
-
-\sectionsep % Some whitespace after the section
-
-\end{minipage} % The end of the right column
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
